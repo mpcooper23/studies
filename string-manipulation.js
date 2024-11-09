@@ -3,9 +3,9 @@
  * 
  * 0: 
  * 
- * 1. 
+ * 1. With Operators: 
  * 
- * 2. 
+ * 2. With String Methods: 
  * 
- * 3: 
+ * 
  */
