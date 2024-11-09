@@ -3,9 +3,16 @@
  * 
  * 0: 
  * 
- * 1. 
+ * 1. Assignment Operators:
  * 
- * 2. 
+ * 2. Arithmetic Operators:
  * 
- * 3: 
+ * 3. Comparison Operators:
+ * 
+ * 4. Logical Operators: 
+ * 
+ * 5. Unary Operators (!, typeOf, -):
+ * 
+ * Ternary Operators (a ? b: c):
+ * 
  */
