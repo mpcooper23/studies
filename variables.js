@@ -13,8 +13,8 @@
  * // => "let":
  * // => "const":
  * 
- * 3: Hoisting: During the Javascript reader's compilation phase, the program scans the data and pulls up certain variables, 
- * prioritizing named functions and varaibles declared with "var" first. Ultimately, the prioritized data that is pulled to the 
- * top of the code script, or "hoisted", is read first during the reading phase.  
+ * 3: Hoisting: During the Javascript reader's compilation phase (the first step of its parsing a program), the program scans 
+ * the data and pulls up certain variables, prioritizing named functions and varaibles declared with "var" first. Ultimately, 
+ * the prioritized data that is pulled to the top of the code script, or "hoisted", is read first during the reading phase.  
  */
 
