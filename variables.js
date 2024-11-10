@@ -4,12 +4,21 @@
  * can be invoked or 'reached' at any subsequent point in the program.
  * 
  * 1. Declaration and Assignment: In order to create a variable we must first `declare` it. 
- * Depending on the declarative keyword you use, you may initialize the variable with a value or not. 
- * For instance, "var" 
- * 
+ * In general, you can declare the variable with a value or not. Once the value is added (after the 
+ * '=' assignation), it is "initialized." Until it is initialized, the declared variable has a "undefined"
+ * value:*/
+ 
+var num; // num variable declared, but not initialized with a value.
+ 
+console.log(num); // returns undefined until initialized 
+ 
+var num = 23; // num initialized with 23
+ 
+/**
+ *
  * 2. Var, let, const: There are three declarative keywords that can be used to declare variables--var, let, const. 
  * 
- * // => "var":
+ * // => "var": during parsing, var is hoisted but left undefined. Also, "var"-declared values are
  * // => "let":
  * // => "const":
  * 
