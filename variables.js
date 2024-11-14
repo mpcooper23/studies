@@ -5,7 +5,7 @@
  * 
  * 1. Declaration and Assignment: In order to create a variable we must first `declare` it. 
  * You can declare the variable with a value or not (i.e. not intialize the variable). Once the value is added (after the 
- * '=' assignation), it is "initialized." Until it is initialized, the declared variable has a "undefined"
+ * '=' assignation), it is assigned or "initialized." Until it is initialized, the declared variable has a "undefined"
  * value:
  * */
  
@@ -33,8 +33,17 @@ let director = 'David Lynch' // variable initialized with "let" keyword
 const actor = {firstName: 'Kyle', lastName: 'MacLachlan'} //const variable initialized with an object
  /* 
  *
- * 3: Hoisting: During the Javascript reader's compilation phase (the first step of its parsing a program), the program scans 
+ * 3: Hoisting: During the Javascript reader's compilation phase (the first step of its "parsing" a program), the program scans 
  * the data and pulls up certain variables, prioritizing named functions and varaibles declared with "var" first. Ultimately, 
- * the prioritized data that is pulled to the top of the code script, or "hoisted", is read first during the reading phase.  
+ * this prioritized data is pulled to the top of the code script, or "hoisted", during the initial reading phase.  
+ * 
+ * => **Along with the "var" keyword being prioritized, it has the behavior/side-effect of "leaking" out of a block scope and into the global scope. 
+ * Thus, for example, a "var" variable placed inside a function's block scope will be pulled into the global scope, which tends to impact the developer's 
+ * program in unintentional ways (i.e. block-scoped "var"-keyworded variables leaking into the global scope) 
+ * 
+ * => **Another important facet of hoisting is the prioritization of functions. This means that a function can be invoked no matter where it appears in the 
+ * script. What you see is not what you get with hoisting, then: always assume variables and functions are pulled to the top, and that your "var" will leak 
+ * into the global environ when used in block scopes.
  */
+
 
