@@ -1,7 +1,8 @@
 /**
- ***********************=> Control Flow <=***************************
+ *****************************=> Control Flow <=******************************
  * 
- * 0: Control flow refers to the pathways developers create with conditional statements. 
+ * 0: Control flow refers to the pathways developers create with conditional 
+ * statements. 
  * 
  * 1. If:
  * 
