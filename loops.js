@@ -31,3 +31,12 @@
  * 
  * 4. Loop over an Object.
  */
+
+ //Example of a reverse for loop used in a function
+ function reverseString(input) {
+    let stringRev = ''//creating output string
+    for (let i = input.length - 1; i >= 0; i--){//creating reverse for loop 
+        stringRev += input[i] //adding iterated values to the output string
+     } return stringRev //returns output string
+}
+
