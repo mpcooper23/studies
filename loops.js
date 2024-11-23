@@ -20,9 +20,16 @@
  * 
  * => for-in loops: used to iterate through objects, the for-in loop's syntax triggers iteration through each key 
  * in a given object. As each key is isolated, we can retrieve its value, or manipulate individual elements within
- * the object
- * 
- * 
+ * the object. Since there is no inherent order to key:value pairs (unlike arrays and strings, which have indexes
+ * as entry-points for each element.), for-in loops indentify an object's key's names. 
+ */ 
+
+for (let key in object){
+   console.log(object[key])//logs each value as string
+   console.log(object.key)//avoid the common error of using dot notation, which results in "undefined", since
+}                          //the computer interprets this as a literal key that exists in the object.
+
+ /* 
  * 
  * 2. Be able to loop any number of times, forward counting up to some limit, backward counting down to 0.
  * 
