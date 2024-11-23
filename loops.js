@@ -21,7 +21,8 @@
  * => for-in loops: used to iterate through objects, the for-in loop's syntax triggers iteration through each key 
  * in a given object. As each key is isolated, we can retrieve its value, or manipulate individual elements within
  * the object. Since there is no inherent order to key:value pairs (unlike arrays and strings, which have indexes
- * as entry-points for each element.), for-in loops indentify an object's key's names. 
+ * as entry-points for each element.), for-in loops indentify an object's key's names. Remember to only use a for-in
+ * loop when you have to access each key in the object; otherwise, use dot notation to access the individual key. 
  */ 
 
 for (let key in object){
