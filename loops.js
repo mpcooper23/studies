@@ -24,8 +24,16 @@
  * 
  * 
  * 
- * 
  * 2. Be able to loop any number of times, forward counting up to some limit, backward counting down to 0.
+ * 
+ * => To set a loop's limit, input the stop condition in the for-loop syntax:
+ */
+
+ for (let i = 0; i < string.length; i++){ //here, the stop condition is set to the end of a string's length
+   console.log(string[i]) // here, the return statement in the code block logs each iteration
+ }
+ 
+/* 
  * 
  * 3. Loop over an Array, forwards and backwards.
  * 
