@@ -24,7 +24,7 @@ if (1<2) {
     console.log('if "if" is true, then the conditional chain will not pass this initial statement')
 }else if (1<3){
     console.log('even though this condition is true, it will never run because "if" has already ended chain')
-}else (1<4){
+}else if (1<4){
     console.log('another true condition that does not run because the first condition, "if", stops chain')
 }
 
