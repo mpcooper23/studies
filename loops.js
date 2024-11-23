@@ -29,15 +29,20 @@
  * => To set a loop's limit, input the stop condition in the for-loop syntax:
  */
 
- for (let i = 0; i < string.length; i++){ //here, the stop condition is set to the end of a string's length
-   console.log(string[i]) // here, the return statement in the code block logs each iteration
- }
+ for (let i = 0; i < string.length; i++){ //here, a start variable is set at 0; the stop condition is set to the end of a string's length
+   console.log(string[i]) // the third and final inputted value increments the index variable
+ }                       //finally, the return statement in the code block logs each iteration
  
 /* 
  * 
  * 3. Loop over an Array, forwards and backwards.
- * 
- * 4. Loop over an Object.
+ */
+
+for(let i = string.length - 1; i >= 0; i--){ // here, to reverse the loop, the start condition is set at the end 
+   console.log(string[i])                    //of the string; the stop condition is set to a number; a decremental
+}                                           //operator sets the input to decrement instead of increment
+
+ /* 4. Loop over an Object.
  */
 
  //Example of a reverse for loop used in a function
