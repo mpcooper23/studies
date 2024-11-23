@@ -28,7 +28,9 @@ if (1<2) {
     console.log('another true condition that does not run because the first condition, "if", stops chain')
 }
 
- /* 2. Else-if: this condition always follows the first "if" statement. 
+ /* 2. Else-if: this condition always follows the first "if" statement. The conditional chain is a singular
+ unit of conditionality where the first true condition stops chain, so the code block is executed, and all 
+ remaining conditions are then skipped. 
  * 
  * 3. Else: this condition does not require parentheses (i.e. a set condition)
  * 
