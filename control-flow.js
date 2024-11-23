@@ -32,15 +32,42 @@ if (1<2) {
  unit of conditionality where the first true condition stops chain, so the code block is executed, and all 
  remaining conditions are then skipped. 
  * 
- * 3. Else: this condition does not require parentheses (i.e. a set condition)
+ * 3. Else: this condition does not require parentheses (i.e. a set condition). It acts as a sort of default
+ * that executes if each of the previous conditions turn out to be false. 
  * 
  * 4. Switch: this statement
- * 
- * 
- * 5. Ternary Operator: shorthand for if-else statement; use this to acheive DRY, cleaner code. 
- * 
- * 
- */
+ */ 
+
+ //Example of a switch statement used in a function
+function caseInSwitch(val){
+    switch(val){
+        case 1: 
+        return 'alpha';
+        case 2:
+        return 'beta';
+        case 3: 
+        return 'gamma'
+        case 4: 
+        return 'delta'
+    }
+    return answer;
+    }
+    caseInSwitch(1)//calling function with 1 as the argument
+
+ /* 
+ * 5. Ternary Operator: shorthand syntax for if-else statement; use this to acheive DRY, cleaner code. 
+ */ 
+
+function createStatement(age){
+    let statement;//variable declared
+    if(age >= 21){
+statement = "Drink up!"//variable initialized conditionally
+    }else {
+    statement = "You're too young!"
+}
+}
+ 
+age >= 21 ? statement = "Drink up!" : statement = "You're too young!" //ternary syntax using above if-else chain
 
  // Example of a function that uses an if statement to check conditions/set logic according to a specific control flow
  function sortAscending(stringOne, stringTwo) {
@@ -50,19 +77,3 @@ if (stringOne > stringTwo){//"if" statement checks if first string is higher in 
     return 1
 }else {return 0}//"else" statement to establish condition 3, or if the strings are equal
 }
-
-//Example of a switch statement used in a function
-function caseInSwitch(val){
-switch(val){
-    case 1: 
-    return 'alpha';
-    case 2:
-    return 'beta';
-    case 3: 
-    return 'gamma'
-    case 4: 
-    return 'delta'
-}
-return answer;
-}
-caseInSwitch(1)//calling function with 1 as the argument
