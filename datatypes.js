@@ -72,7 +72,7 @@ delete user.age //will delete the key "age" from user object.
     }
 }
  
- /* 7. undefined:
+ /* 7. undefined: 
  */ 
 
  let val; // uninitialized values return undeclared
@@ -85,6 +85,28 @@ delete user.age //will delete the key "age" from user object.
  * 
  * 11. What is the difference between primitive/simple and complex data types?
  * 
+ * Simple:
+ * 
+ * Complex: 
+ * 
  * 12. Primitive values are passed to a function BY COPY, complex values are BY REFERENCE. 
  * What does that mean, and how are they different?
+ * 
+ * ---> "Copy by Value": creates distinct copies of simple/primitive data types
+ *
+ */ 
+
+let x = 100;
+let y = x; 
+let y = 10;
+ 
+ /* //=> here, y is a COPY of x; once y is reassigned, it has no effect on x. This occurs with PRIMITIVE VALUES.
+ * 
+ * ---> "Copy by Reference": when two or more variables point to the same piece of complex data
+ */ 
+ let x = {};
+ let y = x;
+ let y = {firstName: 'Iggy', lastName: 'Pop};
+ /* //=> here, both x and y REFERENCE the same object. Thus, when y is mutated, x "refers" to the same object, so x's 
+ *    // values are also mutated in the exact same fashion.
  */
