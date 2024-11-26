@@ -48,7 +48,16 @@ genre: 'Hair Metal'
 
 //=> dot notation only works with literal keys. For example, Javascript reads object.key as an 
 //object containing a literal key named "key". (The code typed on the right side of the dot is 
-//interpreted literally.) To avoid this error, simply use bracket notation instead of dot.
+//interpreted literally.) To avoid this error, simply use bracket notation (object[key]) instead 
+//of dot (object.key).
+
+object.key = value; //Javascript reads this as a literal key and will create a key named "key".
+object[key] = value; //Javascript reads this as a general key and will create a key named after the value.
+
+//=> instead of array methods such as .pop, .unshift, .slice, to remove key:values from objects,
+//we can use dot notation and the delete keyword:
+
+delete user.age //will delete the key "age" from user object.
 
  /* 6. Function: block-scoped and first-class objects in that they can be plugged into other 
  * functions (i.e. higher-order functions) and set as a value to a variable. 
