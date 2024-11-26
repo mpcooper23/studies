@@ -28,13 +28,36 @@ console.log(num) //returns 23 now
  * 
  * // => "var": shorthad for "variable'. During parsing, var is hoisted but left undefined. Also, 
  * "var"-declared values leak out into the global scope when used in a block scope.
+ * Var qualities:
+ * 1. You CAN declare a variable and not initialize it.
+ * 2. You CAN reassign a variable.
+ * 3. You CAN re-declare var variables (NOT GOOD)
+ * 4. Var variables can ONLY be global or function scoped
  * 
  * // => "let": the "let" keyword was added to ES6 in 2015, and allows developers to declare/initialze 
  * values without worrying about scope leakage.
- * 
- * // => "const": also added in ES6, const is shorthand for "constant"; the "const" keyword cannot be 
+ * Let qualities:
+ * * 1. You CAN declare a variable and not initialize it.
+ * 2. You CAN reassign a variable.
+ * 3. You CANNOT re-declare a let-declared variable
+ * 4. Let variables CAN be block scoped:
+ */ 
+
+while (num < 3){
+    let total = num++//total will be block scoped because it is declared with let
+}// had this block-scoped variable "total" been declared with var, it would either leak out (or "break free") into the global or the function scope
+ 
+ /* // => "const": also added in ES6, const is shorthand for "constant"; the "const" keyword cannot be 
  * changed once initialized.
+Const qualities:
+ * * 1. You CANNOT declare a const variable and not initialize it.
+ * 2. You CANNOT reassign a const variable.
+ * 3. You CANNOT re-declare a const-declared variable
+ * 4. Const variables CAN be block scoped.
  */
+
+//In general, it doesn't matter which declarative keyword you use in the global scope;
+//these variables will always be globally-scoped because they are initialized globally.
  
 var movies = ['Blue Velvet', 'Eraserhead', "Mulholland Drive"]; //array of string values declared/initialized with var
 let director = 'David Lynch' // variable initialized with "let" keyword
