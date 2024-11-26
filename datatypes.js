@@ -30,6 +30,10 @@ let bool = true;
 
  let array = [1, 'two', {firstName: 'Bobby', lastName: 'Brown'}, true]
 
+ //=> Think of array indexes as filing cabinet slots; for instance, using bracket notation, you
+ //can add an element to the fifth index even if there isn't an element in the fourth. In this case the fourth
+ //element would be undefined. 
+
  /* 5. Object: unlike arrays, which are zero-indexed based, objects store key:value pairs,
  * which can be accessed using dot notation or bracket notation. We use for-in loops to access
  * each key in the object. 
@@ -41,6 +45,10 @@ album: 'Long Cold Winter',
 year: '1988',
 genre: 'Hair Metal'
 }
+
+//=> dot notation only works with literal keys. For example, Javascript reads object.key as an 
+//object containing a literal key named "key". (The code typed on the right side of the dot is 
+//interpreted literally.) To avoid this error, simply use bracket notation instead of dot.
 
  /* 6. Function: block-scoped and first-class objects in that they can be plugged into other 
  * functions (i.e. higher-order functions) and set as a value to a variable. 
