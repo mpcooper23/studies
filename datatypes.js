@@ -94,7 +94,7 @@ delete user.age //will delete the key "age" from user object.
  * 
  * Simple: represent single, "pre-defined" values and are not mutable. These include numbers, strings, booleans, undefined, null, bigInt, and symbol.
  * 
- * Complex: objects and arrays are complex data types because they are mutable. Program developers create these (i.e. they are NOT 'pre-defined" 
+ * Complex: objects and arrays are complex data types because they are mutable. Program developers create these (i.e. they are NOT 'pre-defined")
  * to store and manipulate data.
  * 
  * 12. Primitive values are passed to a function BY COPY, complex values are BY REFERENCE. 
