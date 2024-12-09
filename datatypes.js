@@ -72,16 +72,22 @@ delete user.age //will delete the key "age" from user object.
     }
 }
  
- /* 7. undefined: 
+ /* 7. undefined: a primitive data type that indicates that a variable has not been initialized with a value. Undefined can also 
+ indicate that a variable hasn't been declared at all, or that a function does not explicity 
+ return a value (in which case, the "return" defaults to "undefined"). Essentially, "undefined" indicates an absense of value. 
  */ 
 
- let val; // uninitialized values return undeclared
+ let val; // uninitialized values return "undefined"
  
- /* 8. null:
+ /* 8. null: a primitive data type and a "special" value in Javascript that represents the deliberate absence of any object value.
+ Null is treated as falsy for boolean operations. Essentially, it indicates a lack of identification, indicating that a variable 
+ points to no object.
+
  * 
  * 9. NAN: "Not a Number"
  * 
- * 10. Infinity and -Infinity: 
+ * 10. Infinity and -Infinity: Infinity is a number that represents positive infinity.
+ * -Infinity represents a number of negative infinity.
  * 
  * 11. What is the difference between primitive/simple and complex data types?
  * 
