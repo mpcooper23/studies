@@ -84,16 +84,18 @@ delete user.age //will delete the key "age" from user object.
  points to no object.
 
  * 
- * 9. NAN: "Not a Number"
+ * 9. NAN: "Not a Number", a property of the global object, meaning it's part of the global scope; the isNan() function checks if
+ * a value is NaN. NaN is a falsy data type.
  * 
  * 10. Infinity and -Infinity: Infinity is a number that represents positive infinity.
  * -Infinity represents a number of negative infinity.
  * 
  * 11. What is the difference between primitive/simple and complex data types?
  * 
- * Simple:
+ * Simple: represent single, "pre-defined" values and are not mutable. These include numbers, strings, booleans, undefined, null, bigInt, and symbol.
  * 
- * Complex: 
+ * Complex: objects and arrays are complex data types because they are mutable. Program developers create these (i.e. they are NOT 'pre-defined" 
+ * to store and manipulate data.
  * 
  * 12. Primitive values are passed to a function BY COPY, complex values are BY REFERENCE. 
  * What does that mean, and how are they different?
