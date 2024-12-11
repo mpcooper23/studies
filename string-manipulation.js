@@ -26,7 +26,26 @@ console.log(concatenatedStr) //logs "Operation Spark! ==> '# 1!"
 (str1 !== str2) //returns true
 
  /*
- * 2. With String Methods: 
+ * 2. With String Methods: affixing these to the end of any string will produce an
+ altered version of that string. Some common methods that bootcampers should expect 
+ to use:
  * 
- * 
+ ===> .length - logs a numerical representation of length
+ *
+ ===> .charAt() - accepts index and returns the character at that index
+ *
+ ===> .toUpperCase() - logs all uppercase characters; in the parentheses, set the index you wish to uppercase
+ *
+ ===> .toLowerCase() - logs all lowercase; in parantheses, set the index you wish to lowercase
+ *
+ ===> .slice(start index, end index) -
+ *
+ ===> .concat() - similar to using concatenation operators, only you place the strings to concat inside 
+ parantheses and separate each input with a comma
+ *
+ ===> .join() - 
+ *
+ ===> .split() - often used in conjuction with .join(),
+ *
+ ===> Template Literals: 
  */
