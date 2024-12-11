@@ -15,10 +15,12 @@
  * 
  * 3. What's the syntax for a NAMED function?
  */ 
+
  function getRandom(array){
  let randomIndex = Math.floor(Math.random() * array.length)
  return randomIndex
  }
+
 /* 
  * 4. How do we assign a function to a variable?
  */
