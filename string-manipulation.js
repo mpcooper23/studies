@@ -38,14 +38,16 @@ console.log(concatenatedStr) //logs "Operation Spark! ==> '# 1!"
  *
  ===> .toLowerCase() - logs all lowercase; in parantheses, set the index you wish to lowercase
  *
- ===> .slice(start index, end index) -
+ ===> .slice(start index, end index) - extracts a substring based on inputted start and end indexes
+ (also see .substring(start, end), which is essentially produces the same output)
  *
  ===> .concat() - similar to using concatenation operators, only you place the strings to concat inside 
  parantheses and separate each input with a comma
  *
- ===> .join() - 
+ ===> .join() - this is an array method that "joins" all elements in an array into a single string
  *
- ===> .split() - often used in conjuction with .join(),
+ ===> .split() - often used in conjuction with .join() [for arrays] or .concat() [for strings], this splits
+ the characters of a string into substrings
  *
  ===> Template Literals: 
  */
