@@ -44,10 +44,18 @@ console.log(concatenatedStr) //logs "Operation Spark! ==> '# 1!"
  ===> .concat() - similar to using concatenation operators, only you place the strings to concat inside 
  parantheses and separate each input with a comma
  *
- ===> .join() - this is an array method that "joins" all elements in an array into a single string
+ ===> .join() - this is an ARRAY METHOD that "joins" all elements in an array into a single string, and 
+ not to be confused with .concat(), which only works on string data; similarly, string.join() produces a
+ type error.
  *
  ===> .split() - often used in conjuction with .join() [for arrays] or .concat() [for strings], this splits
  the characters of a string into substrings
  *
- ===> Template Literals: 
+ ===> Template Literals: using backticks in lieu of quotation marks, template literals allow us to enclose
+ entire sentences without relying on string.concat() or assignment operators (i.e. "+" or "+="). We can also 
+ insert variables using a dollar-sign notation followed by curly braces, as such: ${var}
  */
+
+ //TEMPLATE LITERAL
+
+ let str3 = `Expedite your coding journey at ${str1 + " " + str2}!` //prints Expedite your coding journey at Operation Spark!
