@@ -35,6 +35,8 @@ return Math.floor(Math.random() * array.length);
  /* 5. Functions can OPTIONALLY take inputs, and OPTIONALLY return a single value. How do we specify inputs, and how do we specify outputs?
  * 
  * 6. Scope: Functions can see and modify variables in parent or global scopes. The inverse is NOT true.
+ * ==> This is due to block scoping, or the phenomenon where a function creates its own environment for declaring variables. In this block
+ * scope, variables declared within the function can 'see' global variables, but not the other way around. 
  * 
  * 7. Closures: Functions for closures around the data they house. If an object returned from the Function and is held in memory somewhere 
  (referenced), that closure stays ALIVE, and data can continue to exist in these closures! 
