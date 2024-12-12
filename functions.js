@@ -7,7 +7,29 @@
  * function's parameters act as placeholders, or slots waiting to be filled with the argument values. In this way, functions are 
  * codes whose abstractions allow for inputting of specific data cases. 
  * 
- * 1. The two phases to using functions: First we must declare. Next we can execute (e.g. invoke, or call) a function 
+ * Functions are FIRST-CLASS OBJECTS, meaning that JVS treats them as "first-class citizens", a value that's just another
+ * type of object:
+ *  -- it can be stored as a value in a variable
+ *  -- it can be returned by another function
+ *  -- it can be passed into another function as an argument
+ *  -- it can be stored in an array or within an object
+ *  -- it can have its own methods and properties
+ */ 
+
+//===> As an example of its first-class capabilities, here's a function that takes
+    // another function that modifies an array of strings
+function modifyStrings(strings, modify) {
+   //creating outlet array
+   let modified = [];
+   //for loop to iterate through strings array
+   for(let i = 0; i < strings.length; i++){
+      let mod = modify(strings[i]) // Modifying strings with inner-function invocation
+  modified.push(mod) //collecting results by pushing them to outlet arr. 
+   }
+   return modified//returning modified strings in array
+}
+
+ /* 1. The two phases to using functions: First we must declare. Next we can execute (e.g. invoke, or call) a function 
  by placing arguments in the parentheses or placeholders.
  * 
  * 2. What's the difference between a function's parameters and arguemnts PASSED to a function?
