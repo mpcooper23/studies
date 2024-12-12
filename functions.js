@@ -17,7 +17,8 @@
  */ 
 
 //===> As an example of its first-class capabilities, here's a function that takes
-    // another function that modifies an array of strings
+    // another function that modifies an array of strings in non-destructive terms. 
+
 function modifyStrings(strings, modify) {
    //creating outlet array
    let modified = [];
@@ -31,8 +32,31 @@ function modifyStrings(strings, modify) {
 
  /* 1. The two phases to using functions: First we must declare. Next we can execute (e.g. invoke, or call) a function 
  by placing arguments in the parentheses or placeholders.
- * 
- * 2. What's the difference between a function's parameters and arguemnts PASSED to a function?
+ */ 
+ 
+function allStringsPass(strings, test) { //function declaration with two parameters: 'strings' is an array of strings
+    let trues = [];                       //'test' is another function, that callback of which is TBD by developer
+for(let i = 0; i < strings.length; i++){
+    if(test(strings[i]) === true){ //here, the 'test' function is invoked on each element isolated by the for loop
+        trues.push(strings[i]) //if string[i] is "true", then the element is pushed into the output array
+    }
+}   if(trues.length === strings.length){ //tests all strings in output against original array length 
+        return true;
+    }else {
+        return false;
+    }
+}
+
+//===> Here are two examples of arguments passed into parameters in function invocations:
+var beginsWithA = allStringsPass(['pumpkin', 'paul', 'pearl'], function(str){
+    return str[0] === 'p';
+}); //true (because all strings start with 'p')
+//===> NOTE how the developer simply inputs an anonymous function for the CALLBACK
+var fiveOrMoreLetters = allStringsPass(['pumpkin', 'paul', 'pearl'], function(str){
+   return str.length > 5;
+}) // false because 'paul' in length is less than 5*/
+ 
+/* 2. What's the difference between a function's parameters and arguemnts PASSED to a function?
  Parameters are placeholders that are signified with (). The parameter can be empty, or it can include a sort of abstract keyword
  that essentially acts as a space that you can plug in with any global variable.
  * 
