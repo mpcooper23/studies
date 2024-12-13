@@ -79,7 +79,14 @@ return Math.floor(Math.random() * array.length);
 }
 
  /* 5. Functions can OPTIONALLY take inputs, and OPTIONALLY return a single value. How do we specify inputs, and how do we specify outputs?
- * 
+ We specify inputs in the parameter's placeholders. We specify outputs with the return statement. 
+*/
+
+function add(a, b){//optional inputs (i.e. PARAMETERS) are placed within parentheses
+   return a + b; //optional outputs follow a return statement and use assignment operators to alter value
+}
+
+ /* 
  * 6. Scope: Functions can see and modify variables in parent or global scopes. The inverse is NOT true.
  * ==> This is due to block scoping, or the phenomenon where a function creates its own environment for declaring variables. In this block
  * scope, variables declared within the function can 'see' global variables, but not the other way around. 
@@ -92,6 +99,23 @@ return Math.floor(Math.random() * array.length);
     console.log(blockScopeVar)
  }
 
- /* 7. Closures: Functions for closures around the data they house. If an object returned from the Function and is held in memory somewhere 
- (referenced), that closure stays ALIVE, and data can continue to exist in these closures! 
+ /* 7. Closures: Functions form closures around the data they house. First, an object is returned from the Function, and then it is held 
+ in memory somewhere (referenced), and that closure stays ALIVE, and data can continue to exist in these closures! In other words, a 
+ CLOSURE in JVS is a function that retains access to its outer function's variables
+ even after the outer function has finished executing. This allows the inner function
+ to 'remember' the environment in which it was created.
  */
+
+ //===> In the below example, innerFunction is a closure that captures the outerVariable from
+       // outerFunction. Even after outerFunction has executed, innerFunction can still access
+       //outerVariable:
+
+function outerFunction (outerVariale){
+return function innerFunction (innerVariable){
+   return `Outer: ${outerVariable}, Inner: ${innerVariable}`;
+   };
+}
+
+const closureExample = outerFunction('outside');
+
+console.log(closureExample('inside')); // Output: "Outer: outside, Inner: inside"
