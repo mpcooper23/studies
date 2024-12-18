@@ -61,3 +61,31 @@ for(let i = string.length - 1; i >= 0; i--){ // here, to reverse the loop, the s
      } return stringRev //returns output string
 }
 
+//* 5. Recursion: 
+
+//  Using FOR LOOP for factorial func: 
+
+// 5! === 5 * 4 * 3 * 2 * 1 === 210
+function factorial(n) {
+   var result = n;
+   
+   for (var i = n - 1; i > 0; i--) {
+       result *= i;
+   }
+   
+   return result;
+}
+
+console.log(factorial(5));
+
+// Using RECURSION for factorial func:
+
+function factorial(n) {
+   if(n === 1){//base case
+     return 1
+   }else return n * factorial(n -1) //recursive case
+ }
+ 
+ console.log(factorial(3)); // 6
+ console.log(factorial(5)); // 120
+ console.log(factorial(10)); // 3628800
