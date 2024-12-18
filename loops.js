@@ -61,8 +61,22 @@ for(let i = string.length - 1; i >= 0; i--){ // here, to reverse the loop, the s
      } return stringRev //returns output string
 }
 
-//* 5. Recursion: 
+//* 5. Recursion: when a function calls itself within its own definition
+//Similar to a loop, recursion allows for interation over an input by creating
+//a recursive case and a base case. The latter establishes when the recursive 
+//process should end.
 
+/**
+ * There are two parts to every recursive function:
+ * 1. A base case (or end-case): Where a certain condition is met,
+ * signaling the end to the processing. 
+ * 
+ * 2. A recursive case: There's still processing to do, so continue 
+ * the process, and let the function call itself, not mutating but 
+ * modifying the arguments, such that the base case is eventually met. 
+ *
+ */
+//NOTE: Any process that requires a loop can also be solved using recursion
 //  Using FOR LOOP for factorial func: 
 
 // 5! === 5 * 4 * 3 * 2 * 1 === 210
